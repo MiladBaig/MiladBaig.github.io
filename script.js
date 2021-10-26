@@ -60,13 +60,6 @@ let languages = {
     }
 }
 
-const lang = localStorage.getItem('lang');
-
-if (lang == null){
-    setLang('english')
-}else{
-    setLang(lang)
-}
 
 select.addEventListener("change", e => {
     const lang = e.target.value;
