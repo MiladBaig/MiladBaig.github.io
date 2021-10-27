@@ -137,7 +137,6 @@ function setLang(language){
         document.querySelector('body').style.direction = 'rtl'
         introduce.textContent = languages.persian.introduce;
         settingsNote.textContent = languages.persian.settingsNode;
-        introduce.style.fontSize = "2rem";
         themeTxt.textContent = languages.persian.themeText;
         jobDesc.textContent = languages.persian.jobDesc;
         jobDet.textContent = languages.persian.jobDet;
@@ -168,7 +167,6 @@ function setLang(language){
     }else if(language == 'english'){
         document.querySelector('body').style.direction = 'ltr'
         introduce.textContent = languages.english.introduce;
-        introduce.style.fontSize = "56px";
         settingsNote.textContent = languages.english.settingsNode;
         themeTxt.textContent = languages.english.themeText;
         jobDesc.textContent = languages.english.jobDesc;
