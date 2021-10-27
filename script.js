@@ -53,6 +53,14 @@ const postTitle = document.querySelector('#post-title');
 const postIntro = document.querySelector('#post-intro');
 const readM1 = document.querySelector('#read-m1');
 const readM2 = document.querySelector('#read-m2');
+const blackJackTitle = document.querySelector('#b-title');
+const blackJackIntro = document.querySelector('#b-intro');
+const formName = document.querySelector('#form-name');
+const formEmail = document.querySelector('#form-email');
+const formSubject = document.querySelector('#form-subject');
+const formTouch = document.querySelector('#touch');
+const formMessage = document.querySelector('#form-message');
+const submitBtn = document.querySelector('#submit-btn');
 
 
 
@@ -74,6 +82,14 @@ let languages = {
         postIntro: "a simple project with focus on JWT",
         readM1: "Read more",
         readM2: "Read more",
+        blackJackTitle: "BlackJack",
+        blackJackIntro: "BlackJack game with javascript, HTML and Css",
+        formName: "Name",
+        formEmail: "Email",
+        formSubject: "Subject",
+        formTouch: "Get in touch",
+        formMessage: "Message",
+        submitBtn: "Send"
     },
     persian : {
         introduce: "سلام من میلادم 👋️ ",
@@ -89,9 +105,17 @@ let languages = {
         socialTxt: "می تونید اینجاها منو پیدا کنید",
         proj: "تعدادی از پروژه های من",
         postTitle: "نودکافه",
-        postIntro: "یه پروژه ساده احراز هویت با JWT",
+        postIntro: "یه پروژه ساده احراز هویت با NodeJs که با استفاده از MongoDb  و JWT نوشته شده",
         readM1: "بیشتر بخوانید",
         readM2: "بیشتر بخوانید",
+        blackJackTitle: "بلک جک",
+        blackJackIntro: " بلک جک یه بازی ساده س که با استفاده از جاوا اسکریپت و html و css نوشته شده",
+        formName: "نام",
+        formEmail: "ایمیل",
+        formSubject: "موضوع",
+        formTouch: "ارتباط با من",
+        formMessage: "پیام",
+        submitBtn: "ارسال"
     }
 }
 
@@ -121,13 +145,22 @@ function setLang(language){
         moreAbout.textContent = languages.persian.moreAbout;
         aboutMe.textContent = languages.persian.aboutMe;
         expertise.textContent = languages.persian.expertise;
-        expDetail.textContent = languages.persian.expDetail;
+        expDetail.innerHTML = `${languages.persian.expDetail} <a target="__blank"
+        href="Milad's Resume newer-v.pdf">دانلود رزومه</a>`;
         socialTxt.textContent = languages.persian.socialTxt;
         proj.textContent = languages.persian.proj;
         postIntro.textContent = languages.persian.postIntro;
         postTitle.textContent = languages.persian.postTitle;
         readM1.textContent = languages.persian.readM1;
         readM2.textContent = languages.persian.readM2;
+        blackJackTitle.textContent = languages.persian.blackJackTitle;
+        blackJackIntro.textContent = languages.persian.blackJackIntro;
+        formName.textContent = languages.persian.formName;
+        formEmail.textContent = languages.persian.formEmail;
+        formSubject.textContent = languages.persian.formSubject;
+        formTouch.textContent = languages.persian.formTouch;
+        formMessage.textContent = languages.persian.formMessage;
+        submitBtn.value = languages.persian.submitBtn;
         select.innerHTML = `
         <option value="persian">فارسی</option>
         <option value="english">English</option>
@@ -144,13 +177,22 @@ function setLang(language){
         moreAbout.textContent = languages.english.moreAbout;
         aboutMe.textContent = languages.english.aboutMe;
         expertise.textContent = languages.english.expertise;
-        expDetail.textContent = languages.english.expDetail;
+        expDetail.innerHTML = `${languages.english.expDetail} <a target="__blank"
+        href="Milad's Resume newer-v.pdf">Download Resume</a>`;
         socialTxt.textContent = languages.english.socialTxt;
         proj.textContent = languages.english.proj;
         postIntro.textContent = languages.english.postIntro;
         postTitle.textContent = languages.english.postTitle;
         readM1.textContent = languages.english.readM1;
         readM2.textContent = languages.english.readM2;
+        blackJackTitle.textContent = languages.english.blackJackTitle;
+        blackJackIntro.textContent = languages.english.blackJackIntro;
+        formName.textContent = languages.english.formName;
+        formEmail.textContent = languages.english.formEmail;
+        formSubject.textContent = languages.english.formSubject;
+        formTouch.textContent = languages.english.formTouch;
+        formMessage.textContent = languages.english.formMessage;
+        submitBtn.value = languages.english.submitBtn;
     }
     localStorage.setItem('lang',language);
 }
