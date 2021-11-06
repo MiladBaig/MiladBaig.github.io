@@ -15,6 +15,17 @@
   --buttonColor: black;
 }
 
+@font-face {
+  font-family: "vazir";
+  font-style: normal;
+  font-weight: normal;
+  src: url("/fonts/Vazir.eot");
+  src: url("/fonts/Vazir.eot?#iefix") format("embedded-opentype"),
+    url("/fonts/Vazir.woff2") format("woff2"),
+    url("/fonts/Vazir.woff") format("woff"),
+    url("/fonts/Vazir.ttf") format("truetype");
+}
+
 html,
 body {
   margin: 0;
@@ -32,7 +43,6 @@ h4,
 h5,
 h6 {
   color: var(--mainText);
-  font-family: "Russo One", sans-serif;
 }
 
 p,
@@ -423,25 +433,25 @@ i {
     font-size: 0.65rem;
   }
   h1 {
-    font-size: 2.225rem;
+    font-size: 2.5rem;
   }
   h2 {
-    font-size: 1.9rem;
+    font-size: 2.3rem;
   }
   h3 {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
   }
   h4 {
-    font-size: 0.9rem;
+    font-size: 1.125rem;
   }
   h5 {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
   h6 {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
   }
   p {
-    font-size: 0.65rem;
+    font-size: 0.8rem;
   }
   ul {
     font-size: 0.8rem;
