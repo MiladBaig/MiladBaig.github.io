@@ -191,6 +191,7 @@ function setLang(language){
         formTouch.textContent = languages.english.formTouch;
         formMessage.textContent = languages.english.formMessage;
         submitBtn.value = languages.english.submitBtn;
+        document.querySelector('body').style.fontFamily = "Russo One";
     }
     localStorage.setItem('lang',language);
 }
